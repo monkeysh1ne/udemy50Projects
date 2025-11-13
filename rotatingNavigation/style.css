@@ -90,6 +90,10 @@ nav ul li i {
   transform-origin: top left;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .content img {
   max-width: 100%;
 }
