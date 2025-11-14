@@ -7,6 +7,7 @@ panels.forEach((panel) => {
   })
 })
 
+// clear active status for all panels
 function removeActiveClasses() {
   panels.forEach((panel) => {
     panel.classList.remove('active')
