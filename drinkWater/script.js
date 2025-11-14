@@ -46,8 +46,18 @@ function updateBigCup() {
   if (fullCups === totalCups) {
     remaining.style.visibility = 'hidden'
     remaining.style.height = 0
+    triggerAnimation()
   } else {
     remaining.style.visibility = 'visible'
     liters.innerText = `${2 - (250 * fullCups) / 1000}L `
   }
+}
+
+function triggerAnimation() {
+  const div = document.getElementById('percentage')
+
+  // Restart animation if triggered multiple times
+  div.classList.remove('animate-scale')
+  void div.offsetWidth // force reflow
+  div.classList.add('animate-scale')
 }
