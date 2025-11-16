@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cork: #cd853f;
+  --bottleColor: #afeeee;
+}
+body {
+  color: #000;
+  background-color: #ffe4b5;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 300px;
+  left: 70px;
+  max-width: 80vw;
+}
+
+.cork {
+  position: fixed;
+  top: 50px;
+  width: 150px;
+  height: 150px;
+  background: var(--cork);
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 10% 100%);
+}
+
+.bottle-neck {
+  position: fixed;
+  top: 150px;
+  width: 150px;
+  height: 160px;
+  background-color: var(--bottleColor);
+  border: 5px solid #000;
+}
+
+.bottle {
+  border: solid 5px #000;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: var(--bottleColor);
+}
